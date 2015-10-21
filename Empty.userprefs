@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Droid\Empty.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Empty\SimpleCalculatorServiceViewModel.cs">
+    <Files>
+      <File FileName="Empty\MyPage.xaml" Line="27" Column="31" />
+      <File FileName="Empty\SimpleCalculatorServiceViewModel.cs" Line="19" Column="1" />
+      <File FileName="Empty\packages.config" Line="1" Column="1" />
+      <File FileName="c:\Users\Rass\AppData\Roaming\Skype\My Skype Received Files\Empty\Empty\Empty\MyPage.xaml.cs" Line="12" Column="1" />
+      <File FileName="c:\Users\Rass\AppData\Roaming\Skype\My Skype Received Files\Empty\Empty\Empty\Empty.cs" Line="12" Column="1" />
+      <File FileName="c:\Users\Rass\AppData\Roaming\Skype\My Skype Received Files\Empty\Empty\Droid\MainActivity.cs" Line="22" Column="1" />
+      <File FileName="c:\Users\Rass\AppData\Roaming\Skype\My Skype Received Files\Empty\Empty\Empty\obj\Debug\Empty.MyPage.xaml.g.cs" Line="29" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Rass\AppData\Roaming\Skype\My Skype Received Files\Empty\Empty\Empty\SimpleCalculatorServiceViewModel.cs" line="27" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

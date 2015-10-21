@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Droid\CalculatorMvvM.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests\SimpleCalculatorServiceViewModelTest.cs">
+    <Files>
+      <File FileName="Empty\ViewModel\SimpleCalculatorServiceViewModel.cs" Line="1" Column="1" />
+      <File FileName="Tests\SimpleCalculatorServiceViewModelTest.cs" Line="22" Column="25" />
+      <File FileName="Tests\SimpleCalculatorServiceTest.cs" Line="1" Column="1" />
+      <File FileName="Empty\packages.config" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

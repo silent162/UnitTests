@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Empty"
+             x:Class="Empty.MyPage"
+             Title="Keypad Page">
+    <Grid >
+      <ContentPage.BindingContext>
+        <local:SimpleCalculatorServiceViewModel />
+      </ContentPage.BindingContext>
+
+      <Grid.RowDefinitions>
+        <RowDefinition Height="1.5*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+
+      <ContentView Padding="8" Grid.Row="0" Grid.ColumnSpan="5">
+        <Label x:Name="Output" Text="{Binding DisplayText}" Grid.Column="0" XAlign="End" Font="40" TextColor="Red"/>
+      </ContentView>
+
+	    <Button Text="7" Grid.Row="1" Grid.Column="0"  Command="{Binding CharAddCommand}" CommandParameter="7" />
+	    <Button Text="8" Grid.Row="1" Grid.Column="1"  Command="{Binding CharAddCommand}" CommandParameter="8" />
+	    <Button Text="9" Grid.Row="1" Grid.Column="2"  Command="{Binding CharAddCommand}" CommandParameter="9" />
+	    <Button Text="/" Grid.Row="1" Grid.Column="3"  Command="{Binding OperationAddCommand}" CommandParameter="/"/>
+	    <Button Text="CE" Grid.Row="1" Grid.Column="4" Command="{Binding LastValueCleaningCommand}" CommandParameter="CE" />
+
+	    <Button Text="4" Grid.Row="2" Grid.Column="0" Command="{Binding CharAddCommand}" CommandParameter="4"/>
+	    <Button Text="5" Grid.Row="2" Grid.Column="1" Command="{Binding CharAddCommand}" CommandParameter="5" />
+	    <Button Text="6" Grid.Row="2" Grid.Column="2" Command="{Binding CharAddCommand}" CommandParameter="6" />
+	    <Button Text="*" Grid.Row="2" Grid.Column="3" Command="{Binding OperationAddCommand}" CommandParameter="*" />
+	    <Button Text="C" Grid.Row="2" Grid.Column="4" Command="{Binding AllCleaningCommand}" CommandParameter="C"/>
+
+	    <Button Text="1" Grid.Row="3" Grid.Column="0" Command="{Binding CharAddCommand}" CommandParameter="1" />
+	    <Button Text="2" Grid.Row="3" Grid.Column="1" Command="{Binding CharAddCommand}" CommandParameter="2"/>
+	    <Button Text="3" Grid.Row="3" Grid.Column="2" Command="{Binding CharAddCommand}" CommandParameter="3"/>
+	    <Button Text="-" Grid.Row="3" Grid.Column="3" Command="{Binding OperationAddCommand}" CommandParameter="-" />
+	    <Button Text="=" Grid.Row="3" Grid.RowSpan="2" Grid.Column="4" Command="{Binding OperationAddCommand}" CommandParameter="="/>
+
+	    <Button Text="0" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0"  Command="{Binding CharAddCommand}" CommandParameter="0"/>
+	    <Button Text="." Grid.Row="4" Grid.Column="2" Command="{Binding CharAddCommand}" CommandParameter="."/>
+	    <Button Text="+" Grid.Row="4" Grid.Column="3" Command="{Binding OperationAddCommand}" CommandParameter="+"/>
+    </Grid>
+</ContentPage>

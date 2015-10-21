@@ -1,0 +1,14 @@
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\Tests.dll
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\Tests.pdb
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\Empty.dll
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\nunit.framework.dll
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\Empty.pdb
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\nunit.framework.xml
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\obj\Debug\CalculatorMvvM.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\obj\Debug\Tests.dll
+C:\Users\Worker5\Desktop\Empty1\Empty1\Empty\Tests\obj\Debug\Tests.pdb
