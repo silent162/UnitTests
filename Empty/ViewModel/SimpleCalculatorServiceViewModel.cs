@@ -10,7 +10,7 @@ namespace Empty
 		//Поля
 		private string inputString = "";
 		private string displayText = "0";
-
+			
 		//Свойства
 		public static string s_Operation {get;set;}
 		public double Value{get;set;}
