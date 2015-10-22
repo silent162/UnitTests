@@ -10,7 +10,6 @@ namespace CalculatorMvvM.Tests
 		public void AllCleaningTest()
 		{
 			SimpleCalculatorServiceViewModel sp = new SimpleCalculatorServiceViewModel();
-			string str = "C";
 			sp.DisplayText = "77";
 			sp.InputString = "0177";
 			sp.Value = 1000;
@@ -19,7 +18,7 @@ namespace CalculatorMvvM.Tests
 			sp.Operation_pressed = true;
 			sp.Button_pressed = true;
 
-			sp.AllCleaning (str);
+			sp.AllCleaning ();
 
 			Assert.AreEqual ("0", sp.DisplayText);
 			Assert.AreEqual (string.Empty, sp.InputString);
@@ -34,12 +33,11 @@ namespace CalculatorMvvM.Tests
 		public void LastValueCleaningTest ()
 		{
 			SimpleCalculatorServiceViewModel sp = new SimpleCalculatorServiceViewModel();
-			string str = "CE";
 			sp.DisplayText = "77";
 			sp.InputString = "77";
 			sp.Point_pressed = true;
 
-			sp.LastValueCleaning (str);
+			sp.LastValueCleaning ();
 
 			Assert.AreEqual ("0", sp.DisplayText);
 			Assert.AreEqual (string.Empty, sp.InputString);
@@ -50,9 +48,8 @@ namespace CalculatorMvvM.Tests
 		public void AddCharTest ()
 		{
 			SimpleCalculatorServiceViewModel sp = new SimpleCalculatorServiceViewModel();
-			string str = "С";
-			sp.AllCleaning (str);
-			str = "6";
+			sp.AllCleaning ();
+			string str = "6";
 			sp.AddChar (str);
 			str = ".";
 			sp.AddChar (str);
@@ -69,10 +66,11 @@ namespace CalculatorMvvM.Tests
 		{
 			SimpleCalculatorServiceViewModel sp = new SimpleCalculatorServiceViewModel();
 			string str = "+";
-			sp.AllCleaning ("C");
+			sp.AllCleaning ();
 			sp.AddChar ("9");
 
 			sp.OperationAdd (str);
+
 			Assert.AreEqual ("+", SimpleCalculatorServiceViewModel.s_Operation);
 		}
 
@@ -80,7 +78,7 @@ namespace CalculatorMvvM.Tests
 		public void ArithmeticOperationsTest ()
 		{
 			SimpleCalculatorServiceViewModel sp = new SimpleCalculatorServiceViewModel();
-			sp.AllCleaning ("C");
+			sp.AllCleaning ();
 			sp.Value = 10;
 			string str = "+";
 			sp.ArithmeticOperations (str);
@@ -91,16 +89,15 @@ namespace CalculatorMvvM.Tests
 			sp.InputString = "5";
 			sp.ArithmeticOperations ("=");	
 
-			Assert.AreEqual ("20", sp.InputString);
+			Assert.AreEqual ("20", sp.DisplayText);
 		}
 
 		[Test()]
 		public void CorectInputTest ()
 		{
 			SimpleCalculatorServiceViewModel sp = new SimpleCalculatorServiceViewModel();
-			string str = "С";
-			sp.AllCleaning (str);
-			str = "8";
+			sp.AllCleaning ();
+			string str = "8";
 			sp.CorectInput (str);
 			str = ".";
 			sp.CorectInput (str);
@@ -110,6 +107,23 @@ namespace CalculatorMvvM.Tests
 			sp.CorectInput (str);
 
 			Assert.AreEqual ("8.5", sp.DisplayText);
+		}
+
+		[Test()]
+		public void OnPropertyChangedTest()
+		{			
+			SimpleCalculatorServiceViewModel sp = new SimpleCalculatorServiceViewModel();
+			sp.DisplayText = "5";
+			string s = "";
+			sp.PropertyChanged += delegate {
+				s = "00";
+			};
+
+			//sp.OnPropertyChanged ("DisplayText");
+			sp.DisplayText += s;
+			sp.OnPropertyChanged ("DisplayText");
+			Assert.AreEqual ("500", sp.DisplayText);
+				
 		}
 	}
 }
