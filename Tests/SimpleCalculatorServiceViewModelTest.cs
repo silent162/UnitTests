@@ -119,9 +119,9 @@ namespace CalculatorMvvM.Tests
 				s = "00";
 			};
 
-			//sp.OnPropertyChanged ("DisplayText");
-			sp.DisplayText += s;
 			sp.OnPropertyChanged ("DisplayText");
+			sp.DisplayText += s;
+
 			Assert.AreEqual ("500", sp.DisplayText);
 				
 		}
